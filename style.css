@@ -1,18 +1,27 @@
+:root {
+    --cor-primaria:  darkgreen;
+    --cor-segundaria:  rgb(110, 255, 110);
+    --cor-fundo:  white;
+    --cor-texto: rgb(0, 0, 0);
+    --cor-contraste: rgb(252, 252, 252);
+    --cor-botao: rgb(255, 255, 255);
+}
+
 body {
     max-width: 100vw;
 }
 
 header {
-background-color: darkgreen;
-color: white;
+background-color:var(--cor-primaria);
+color: var(--cor-contraste);
 text-align: center;
 margin: 0 auto;
 padding: 16px;
 }
 
 main {
-background-color: white;
-color: darkgreen;
+background-color:var(--cor-fundo);
+color: var(--cor-primaria);
 margin: 0 auto;
 padding: 16px;
 display: flex;
@@ -21,7 +30,7 @@ flex-wrap: wrap;
 
 article {
 display: flex;
-border: 1px solid darkgreen;
+border: 1px solid var(--cor-primaria);
 margin: 16px;
 gap: 16px;
 padding: 16px;
